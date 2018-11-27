@@ -12,7 +12,7 @@ import { List, ListItem } from 'react-native-elements';
 import AppBar from '../components/AppBar';
 
 
-export default class HomeScreen extends React.Component {
+export default class MediaScreen extends React.Component {
     static navigationOptions = ({ screenProps }) => ({
         header: null,
         drawerLabel: screenProps.t('menu:media'),

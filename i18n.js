@@ -39,11 +39,11 @@ i18n
       },
       fr: {
         menu: {
-            home:   'accueil',
-            news:   'nouvelle',
+            home:   'Home',
+            news:   'Actualités',
             media:  'Media',
-            events: 'evenements',
-            setting: 'Parametre'
+            events: 'Evènements',
+            setting: 'Paramètres'
         },
         common: {
             currentLanguage: 'La langue courante est "{{lng}}"',
