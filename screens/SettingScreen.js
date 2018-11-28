@@ -20,6 +20,7 @@ export class Home extends React.Component {
 
   render() {
     const { t, i18n } = this.props;
+    console.log("t" + t);    
 
     return (
       <View style={styles.container}>

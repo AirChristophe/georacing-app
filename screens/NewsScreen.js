@@ -1,4 +1,5 @@
 import React from 'react';
+import { withNamespaces } from 'react-i18next';
 import {
   FlatList,
   StatusBar,
@@ -12,7 +13,7 @@ import { List, ListItem } from 'react-native-elements';
 import AppBar from '../components/AppBar';
 
 
-export default class HomeScreen extends React.Component {
+export class NewsScreen extends React.Component {
     static navigationOptions = ({ screenProps }) => ({
         header: null,
         drawerLabel: screenProps.t('menu:news'),
@@ -58,7 +59,8 @@ export default class HomeScreen extends React.Component {
   }
 
   render() {
-
+    const { t, i18n } = this.props;
+    console.log("t" + t);    
 
     return (
       <View style={styles.container}>
@@ -75,6 +77,8 @@ export default class HomeScreen extends React.Component {
     );
   }
 }
+
+export default withNamespaces(['home', 'common'], { wait: true })(NewsScreen);
 
 const styles = StyleSheet.create({
   container: {
